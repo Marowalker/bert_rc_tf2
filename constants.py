@@ -6,9 +6,9 @@ DROPOUT = 0.1
 LEARNING_RATE = 2e-5
 NUM_EPOCH = 5
 EMB_SIZE = 768
-REBUILD = 0  # 1 to rebuild, 0 to load
-REMAKE = 0  # 1 to build model again, 0 otherwise
-TESTED = 1  # 1 if perl script has been run, 0 otherwise
+REBUILD = 1  # 1 to rebuild, 0 to load
+REMAKE = 1  # 1 to build model again, 0 otherwise
+TESTED = 0  # 1 if perl script has been run, 0 otherwise
 
 relation = ['Other',
             'Message-Topic(e1,e2)',

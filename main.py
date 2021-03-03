@@ -2,8 +2,6 @@ from preprocessing import make_train_files, make_test_files
 from bert_model import BertModel
 from transformers import TFBertModel
 from constants import REBUILD, REMAKE, TESTED, SCORE
-import shlex
-import subprocess
 
 
 def official_f1():
