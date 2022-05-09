@@ -54,8 +54,8 @@ def make_token_pickle(filein, fileout):
 def load_token_pickle(filein, size):
     fi = open(filein, 'rb')
     x = []
+    s = pickle.load(fi)
     for i in range(size):
-        s = pickle.load(fi)
         x.append(s)
     return x
 

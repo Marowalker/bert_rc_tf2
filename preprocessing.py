@@ -4,7 +4,7 @@ import tensorflow as tf
 
 
 def make_train_files():
-    seperate_file(train_path, train_x_ref_path, train_x_path, train_y_path, TRAIN_SIZE)
+    # seperate_file(train_path, train_x_ref_path, train_x_path, train_y_path, TRAIN_SIZE)
     make_token_pickle(train_x_path, train_pickle_x)
     make_pos_pickle(train_x_ref_path, train_pickle_x_pos)
     f = open(train_pickle_x_pos, 'rb')
@@ -14,8 +14,8 @@ def make_train_files():
 
 
 def make_test_files():
-    seperate_file(test_path, test_x_ref_path, test_x_path,
-                  test_y_path, TEST_SIZE)
+    # seperate_file(test_path, test_x_ref_path, test_x_path,
+    #               test_y_path, TEST_SIZE)
     make_token_pickle(test_x_path, test_pickle_x)
     make_pos_pickle(test_x_ref_path, test_pickle_x_pos)
     f = open(test_pickle_x_pos, 'rb')

@@ -71,7 +71,7 @@ class BertModel:
         self._add_inputs()
         self._add_train_ops()
         self._train()
-        # self.plot_model()
+        self.plot_model()
 
     def predict(self):
         self.model.load_weights(TRAINED_MODELS)
